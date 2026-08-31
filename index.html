@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ONG Pedro Opeka – Faire un don</title>
+  <!-- Font Awesome pour les icônes -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <style>
+    /* ----- RESET & BASE ----- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Roboto, system-ui, sans-serif;
+      background-color: #f8f5f0;
+      color: #2d2a24;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* ----- HEADER ----- */
+    header {
+      background: #1e3a3f;
+      color: #fff;
+      padding: 18px 0;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    header .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 1.6rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+
+    .logo i {
+      font-size: 2rem;
+      color: #e6c384;
+    }
+
+    .logo span {
+      color: #e6c384;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 28px;
+      font-weight: 500;
+    }
+
+    nav ul li a {
+      transition: color 0.2s;
+      padding: 4px 0;
+      border-bottom: 2px solid transparent;
+    }
+
+    nav ul li a:hover,
+    nav ul li a.active {
+      color: #e6c384;
+      border-bottom-color: #e6c384;
+    }
+
+    .btn-don-header {
+      background: #e6c384;
+      color: #1e3a3f;
+      padding: 8px 22px;
+      border-radius: 40px;
+      font-weight: 600;
+      transition: background 0.2s;
+      border: none;
+      cursor: pointer;
+    }
+
+    .btn-don-header:hover {
+      background: #d4b06a;
+    }
+
+    /* ----- HERO ----- */
+    .hero {
+      background: linear-gradient(135deg, #1e3a3f 0%, #2b5a60 100%);
+      color: #fff;
+      padding: 70px 0 60px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+
+    .hero h1 i {
+      color: #e6c384;
+      margin-right: 10px;
+    }
+
+    .hero p {
+      font-size: 1.25rem;
+      max-width: 700px;
+      margin: 0 auto 30px;
+      opacity: 0.9;
+    }
+
+    .hero .btn-hero {
+      background: #e6c384;
+      color: #1e3a3f;
+      padding: 14px 44px;
+      border-radius: 50px;
+      font-size: 1.2rem;
+      font-weight: 600;
+      display: inline-block;
+      transition: background 0.2s, transform 0.1s;
+    }
+
+    .hero .btn-hero:hover {
+      background: #d4b06a;
+      transform: scale(1.03);
+    }
+
+    /* ----- SECTION GÉNÉRIQUE ----- */
+    section {
+      padding: 60px 0;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 2.2rem;
+      font-weight: 600;
+      margin-bottom: 40px;
+      color: #1e3a3f;
+    }
+
+    .section-title i {
+      color: #e6c384;
+      margin-right: 12px;
+    }
+
+    /* ----- ABOUT ----- */
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .about-text {
+      font-size: 1.05rem;
+    }
+
+    .about-text p {
+      margin-bottom: 18px;
+    }
+
+    .about-text strong {
+      color: #1e3a3f;
+    }
+
+    .about-image {
+      background: #d4c9b8;
+      border-radius: 16px;
+      min-height: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 4rem;
+      color: #1e3a3f;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    }
+
+    /* ----- DONATION FORM ----- */
+    .donation-section {
+      background: #f0ebe3;
+    }
+
+    .donation-container {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 40px;
+    }
+
+    .donation-form {
+      background: #fff;
+      padding: 36px 40px;
+      border-radius: 20px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+    }
+
+    .donation-form h3 {
+      font-size: 1.5rem;
+      margin-bottom: 8px;
+      color: #1e3a3f;
+    }
+
+    .donation-form .sub {
+      color: #5f5a52;
+      margin-bottom: 28px;
+    }
+
+    .form-group {
+      margin-bottom: 22px;
+    }
+
+    .form-group label {
+      display: block;
+      font-weight: 600;
+      margin-bottom: 6px;
+      color: #2d2a24;
+    }
+
+    .form-group input,
+    .form-group select {
+      width: 100%;
+      padding: 12px 16px;
+      border: 1.5px solid #d6cec0;
+      border-radius: 10px;
+      font-size: 1rem;
+      background: #fcfaf7;
+      transition: border 0.2s;
+    }
+
+    .form-group input:focus,
+    .form-group select:focus {
+      outline: none;
+      border-color: #1e3a3f;
+      background: #fff;
+    }
+
+    .amount-options {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 8px;
+    }
+
+    .amount-options button {
+      background: #f0ebe3;
+      border: 2px solid transparent;
+      padding: 10px 22px;
+      border-radius: 40px;
+      font-weight: 600;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: all 0.15s;
+      color: #2d2a24;
+    }
+
+    .amount-options button:hover {
+      background: #e6c384;
+      color: #1e3a3f;
+    }
+
+    .amount-options button.active {
+      background: #1e3a3f;
+      color: #fff;
+      border-color: #1e3a3f;
+    }
+
+    .custom-amount {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 12px;
+    }
+
+    .custom-amount input {
+      flex: 1;
+      padding: 10px 14px;
+      border: 1.5px solid #d6cec0;
+      border-radius: 10px;
+      font-size: 1rem;
+    }
+
+    .custom-amount span {
+      font-weight: 600;
+      color: #1e3a3f;
+    }
+
+    .btn-submit {
+      background: #1e3a3f;
+      color: #fff;
+      padding: 16px 32px;
+      border: none;
+      border-radius: 50px;
+      font-size: 1.2rem;
+      font-weight: 600;
+      width: 100%;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.1s;
+      margin-top: 10px;
+    }
+
+    .btn-submit:hover {
+      background: #2b5a60;
+      transform: scale(1.01);
+    }
+
+    .btn-submit i {
+      margin-right: 10px;
+    }
+
+    /* Sidebar infos */
+    .donation-info {
+      background: #fff;
+      padding: 30px 28px;
+      border-radius: 20px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+      height: fit-content;
+    }
+
+    .donation-info h4 {
+      font-size: 1.3rem;
+      color: #1e3a3f;
+      margin-bottom: 16px;
+      border-bottom: 2px solid #e6c384;
+      padding-bottom: 10px;
+    }
+
+    .donation-info ul {
+      list-style: none;
+    }
+
+    .donation-info ul li {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 18px;
+      font-size: 0.98rem;
+    }
+
+    .donation-info ul li i {
+      color: #e6c384;
+      font-size: 1.3rem;
+      width: 28px;
+      text-align: center;
+    }
+
+    .donation-info .highlight {
+      background: #f0ebe3;
+      padding: 14px 18px;
+      border-radius: 12px;
+      margin-top: 20px;
+      font-size: 0.95rem;
+      border-left: 4px solid #e6c384;
+    }
+
+    /* ----- FOOTER ----- */
+    footer {
+      background: #1e3a3f;
+      color: #d6cec0;
+      padding: 30px 0;
+      text-align: center;
+      font-size: 0.95rem;
+    }
+
+    footer .socials {
+      margin-bottom: 12px;
+    }
+
+    footer .socials a {
+      color: #d6cec0;
+      font-size: 1.5rem;
+      margin: 0 12px;
+      transition: color 0.2s;
+    }
+
+    footer .socials a:hover {
+      color: #e6c384;
+    }
+
+    footer p {
+      opacity: 0.8;
+    }
+
+    /* ----- RESPONSIVE ----- */
+    @media (max-width: 900px) {
+      .about-grid,
+      .donation-container {
+        grid-template-columns: 1fr;
+      }
+
+      .donation-info {
+        order: 2;
+      }
+    }
+
+    @media (max-width: 700px) {
+      header .container {
+        flex-direction: column;
+        gap: 14px;
+      }
+
+      nav ul {
+        gap: 16px;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .hero h1 {
+        font-size: 2.2rem;
+      }
+
+      .hero p {
+        font-size: 1rem;
+      }
+
+      .donation-form {
+        padding: 24px 18px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .amount-options button {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+      }
+
+      .btn-submit {
+        font-size: 1rem;
+        padding: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="container">
+      <div class="logo">
+        <i class="fas fa-church"></i>
+        <span>ONG</span> Pedro Opeka
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#" class="active">Accueil</a></li>
+          <li><a href="#about">Notre mission</a></li>
+          <li><a href="#donation">Dons</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="#donation" class="btn-don-header">Donner <i class="fas fa-heart" style="margin-left:6px;"></i></a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <h1><i class="fas fa-hand-holding-heart"></i> Ensemble, changeons des vies</h1>
+      <p>
+        L’ONG Pedro Opeka agit auprès des plus démunis à Madagascar. 
+        Chaque don, petit ou grand, apporte éducation, nourriture et espoir.
+      </p>
+      <a href="#donation" class="btn-hero"><i class="fas fa-arrow-right"></i> Faire un don maintenant</a>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container">
+      <h2 class="section-title"><i class="fas fa-bullseye"></i> Notre mission</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            Inspirée par le père <strong>Pedro Opeka</strong>, notre ONG œuvre depuis 1989 pour 
+            sortir les familles de la pauvreté à Madagascar. Nous construisons des écoles, 
+            des centres de santé et formons les communautés à l’autosuffisance.
+          </p>
+          <p>
+            Avec <strong>plus de 15 000 enfants</strong> scolarisés et des milliers de repas 
+            distribués chaque jour, votre soutien est essentiel pour poursuivre cette action.
+          </p>
+          <p>
+            <i class="fas fa-quote-left" style="color:#e6c384; margin-right:6px;"></i>
+            La charité n’est pas une question d’argent, mais de cœur. – P. Pedro Opeka
+          </p>
+        </div>
+        <div class="about-image">
+          <i class="fas fa-hands-helping"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DONATION SECTION -->
+  <section id="donation" class="donation-section">
+    <div class="container">
+      <h2 class="section-title"><i class="fas fa-gift"></i> Faites un don</h2>
+      <div class="donation-container">
+        <!-- Formulaire -->
+        <div class="donation-form">
+          <h3>Votre don compte</h3>
+          <p class="sub">Choisissez un montant ou entrez le vôtre.</p>
+
+          <form id="donationForm">
+            <div class="form-group">
+              <label>Montant du don (€)</label>
+              <div class="amount-options" id="amountOptions">
+                <button type="button" data-amount="10">10 €</button>
+                <button type="button" data-amount="25">25 €</button>
+                <button type="button" data-amount="50">50 €</button>
+                <button type="button" data-amount="100">100 €</button>
+              </div>
+              <div class="custom-amount">
+                <input type="number" id="customAmount" placeholder="Autre montant" min="1" step="1" />
+                <span>€</span>
+              </div>
+              <small style="color:#5f5a52; display:block; margin-top:6px;">Minimum 1 €</small>
+            </div>
+
+            <div class="form-group">
+              <label for="fullName">Nom complet</label>
+              <input type="text" id="fullName" placeholder="Jean Dupont" required />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Adresse e-mail</label>
+              <input type="email" id="email" placeholder="jean@exemple.fr" required />
+            </div>
+
+            <div class="form-group">
+              <label for="paymentMethod">Mode de paiement</label>
+              <select id="paymentMethod">
+                <option value="cb">Carte bancaire</option>
+                <option value="paypal">PayPal</option>
+                <option value="virement">Virement bancaire</option>
+              </select>
+            </div>
+
+            <button type="submit" class="btn-submit">
+              <i class="fas fa-heart"></i> Donner maintenant
+            </button>
+          </form>
+          <p style="margin-top:16px; font-size:0.9rem; color:#5f5a52; text-align:center;">
+            <i class="fas fa-lock" style="margin-right:6px;"></i> Paiement sécurisé – Vos données sont protégées.
+          </p>
+        </div>
+
+        <!-- Infos côté -->
+        <div class="donation-info">
+          <h4><i class="fas fa-info-circle"></i> Impact de votre don</h4>
+          <ul>
+            <li><i class="fas fa-utensils"></i> 10 € = 20 repas pour un enfant</li>
+            <li><i class="fas fa-book"></i> 25 € = un kit scolaire complet</li>
+            <li><i class="fas fa-heartbeat"></i> 50 € = soins médicaux pour une famille</li>
+            <li><i class="fas fa-hand-holding-heart"></i> 100 € = parrainage d’un élève pour un mois</li>
+          </ul>
+          <div class="highlight">
+            <i class="fas fa-receipt" style="margin-right:10px;"></i>
+            <strong>Reçu fiscal</strong> – Chaque don ouvre droit à une réduction d’impôt de 66 %.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="socials">
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+      </div>
+      <p>&copy; 2026 ONG Pedro Opeka – Tous droits réservés.</p>
+      <p style="margin-top:8px; font-size:0.8rem;">
+        <i class="fas fa-envelope" style="margin-right:6px;"></i> contact@ongpedroopeka.org
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    (function() {
+      // Gestion des boutons de montant prédéfinis
+      const amountButtons = document.querySelectorAll('.amount-options button');
+      const customAmountInput = document.getElementById('customAmount');
+      let selectedAmount = null;
+
+      function deselectAll() {
+        amountButtons.forEach(btn => btn.classList.remove('active'));
+      }
+
+      amountButtons.forEach(btn => {
+        btn.addEventListener('click', function() {
+          deselectAll();
+          this.classList.add('active');
+          selectedAmount = parseInt(this.dataset.amount, 10);
+          customAmountInput.value = ''; // efface le champ personnalisé
+        });
+      });
+
+      customAmountInput.addEventListener('input', function() {
+        if (this.value !== '') {
+          deselectAll();
+          selectedAmount = parseFloat(this.value);
+        } else {
+          // si le champ est vide, on garde la sélection précédente
+          // mais on ne désélectionne pas automatiquement
+        }
+      });
+
+      // Gestion du formulaire
+      const form = document.getElementById('donationForm');
+      form.addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        // Récupération du montant
+        let amount = selectedAmount;
+        if (!amount || isNaN(amount) || amount <= 0) {
+          // Si le champ personnalisé a une valeur, on l'utilise
+          const customVal = parseFloat(customAmountInput.value);
+          if (!isNaN(customVal) && customVal > 0) {
+            amount = customVal;
+          } else {
+            alert('Veuillez sélectionner ou saisir un montant valide (minimum 1 €).');
+            return;
+          }
+        }
+
+        // Vérification du montant minimum
+        if (amount < 1) {
+          alert('Le montant minimum est de 1 €.');
+          return;
+        }
+
+        // Récupération des autres champs
+        const fullName = document.getElementById('fullName').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const paymentMethod = document.getElementById('paymentMethod').value;
+
+        if (!fullName || !email) {
+          alert('Veuillez remplir votre nom et votre e-mail.');
+          return;
+        }
+
+        // Simulation d'envoi (à remplacer par un vrai appel API)
+        const message = `Merci ${fullName} ! Votre don de ${amount.toFixed(2)} € via ${paymentMethod} a bien été pris en compte. Un e-mail de confirmation vous sera envoyé à ${email}.`;
+        alert(message);
+
+        // Réinitialisation (optionnel)
+        form.reset();
+        deselectAll();
+        selectedAmount = null;
+        customAmountInput.value = '';
+      });
+    })();
+  </script>
+</body>
+</html>
