@@ -4,7 +4,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ONG Pedro Opeka – Faire un don</title>
-  <!-- Font Awesome pour les icônes -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
   <style>
     /* ----- RESET & BASE ----- */
@@ -194,7 +193,7 @@
       box-shadow: 0 8px 20px rgba(0,0,0,0.08);
     }
 
-    /* ----- DONATION FORM ----- */
+    /* ----- DONATION (CONTACT) SECTION ----- */
     .donation-section {
       background: #f0ebe3;
     }
@@ -235,7 +234,7 @@
     }
 
     .form-group input,
-    .form-group select {
+    .form-group textarea {
       width: 100%;
       padding: 12px 16px;
       border: 1.5px solid #d6cec0;
@@ -243,63 +242,19 @@
       font-size: 1rem;
       background: #fcfaf7;
       transition: border 0.2s;
+      font-family: inherit;
     }
 
     .form-group input:focus,
-    .form-group select:focus {
+    .form-group textarea:focus {
       outline: none;
       border-color: #1e3a3f;
       background: #fff;
     }
 
-    .amount-options {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      margin-top: 8px;
-    }
-
-    .amount-options button {
-      background: #f0ebe3;
-      border: 2px solid transparent;
-      padding: 10px 22px;
-      border-radius: 40px;
-      font-weight: 600;
-      font-size: 1rem;
-      cursor: pointer;
-      transition: all 0.15s;
-      color: #2d2a24;
-    }
-
-    .amount-options button:hover {
-      background: #e6c384;
-      color: #1e3a3f;
-    }
-
-    .amount-options button.active {
-      background: #1e3a3f;
-      color: #fff;
-      border-color: #1e3a3f;
-    }
-
-    .custom-amount {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      margin-top: 12px;
-    }
-
-    .custom-amount input {
-      flex: 1;
-      padding: 10px 14px;
-      border: 1.5px solid #d6cec0;
-      border-radius: 10px;
-      font-size: 1rem;
-    }
-
-    .custom-amount span {
-      font-weight: 600;
-      color: #1e3a3f;
+    .form-group textarea {
+      resize: vertical;
+      min-height: 100px;
     }
 
     .btn-submit {
@@ -361,15 +316,6 @@
       text-align: center;
     }
 
-    .donation-info .highlight {
-      background: #f0ebe3;
-      padding: 14px 18px;
-      border-radius: 12px;
-      margin-top: 20px;
-      font-size: 0.95rem;
-      border-left: 4px solid #e6c384;
-    }
-
     /* ----- FOOTER ----- */
     footer {
       background: #1e3a3f;
@@ -379,23 +325,9 @@
       font-size: 0.95rem;
     }
 
-    footer .socials {
-      margin-bottom: 12px;
-    }
-
-    footer .socials a {
-      color: #d6cec0;
-      font-size: 1.5rem;
-      margin: 0 12px;
-      transition: color 0.2s;
-    }
-
-    footer .socials a:hover {
-      color: #e6c384;
-    }
-
     footer p {
       opacity: 0.8;
+      margin-bottom: 4px;
     }
 
     /* ----- RESPONSIVE ----- */
@@ -436,11 +368,6 @@
     }
 
     @media (max-width: 480px) {
-      .amount-options button {
-        padding: 8px 16px;
-        font-size: 0.9rem;
-      }
-
       .btn-submit {
         font-size: 1rem;
         padding: 14px;
@@ -476,7 +403,7 @@
         L’ONG Pedro Opeka agit auprès des plus démunis à Madagascar. 
         Chaque don, petit ou grand, apporte éducation, nourriture et espoir.
       </p>
-      <a href="#donation" class="btn-hero"><i class="fas fa-arrow-right"></i> Faire un don maintenant</a>
+      <a href="#donation" class="btn-hero"><i class="fas fa-arrow-right"></i> Je souhaite faire un don</a>
     </div>
   </section>
 
@@ -507,32 +434,19 @@
     </div>
   </section>
 
-  <!-- DONATION SECTION -->
+  <!-- DONATION (CONTACT) SECTION -->
   <section id="donation" class="donation-section">
     <div class="container">
-      <h2 class="section-title"><i class="fas fa-gift"></i> Faites un don</h2>
+      <h2 class="section-title"><i class="fas fa-gift"></i> Faire un don</h2>
       <div class="donation-container">
-        <!-- Formulaire -->
+        <!-- Formulaire de contact -->
         <div class="donation-form">
-          <h3>Votre don compte</h3>
-          <p class="sub">Choisissez un montant ou entrez le vôtre.</p>
+          <h3>Contactez-nous pour votre don</h3>
+          <p class="sub">
+            Remplissez ce formulaire, nous vous recontacterons pour convenir des modalités de votre soutien.
+          </p>
 
-          <form id="donationForm">
-            <div class="form-group">
-              <label>Montant du don (€)</label>
-              <div class="amount-options" id="amountOptions">
-                <button type="button" data-amount="10">10 €</button>
-                <button type="button" data-amount="25">25 €</button>
-                <button type="button" data-amount="50">50 €</button>
-                <button type="button" data-amount="100">100 €</button>
-              </div>
-              <div class="custom-amount">
-                <input type="number" id="customAmount" placeholder="Autre montant" min="1" step="1" />
-                <span>€</span>
-              </div>
-              <small style="color:#5f5a52; display:block; margin-top:6px;">Minimum 1 €</small>
-            </div>
-
+          <form id="contactForm">
             <div class="form-group">
               <label for="fullName">Nom complet</label>
               <input type="text" id="fullName" placeholder="Jean Dupont" required />
@@ -544,36 +458,28 @@
             </div>
 
             <div class="form-group">
-              <label for="paymentMethod">Mode de paiement</label>
-              <select id="paymentMethod">
-                <option value="cb">Carte bancaire</option>
-                <option value="paypal">PayPal</option>
-                <option value="virement">Virement bancaire</option>
-              </select>
+              <label for="message">Message (optionnel)</label>
+              <textarea id="message" placeholder="Précisez éventuellement vos intentions, le montant envisagé, ou toute question…"></textarea>
             </div>
 
             <button type="submit" class="btn-submit">
-              <i class="fas fa-heart"></i> Donner maintenant
+              <i class="fas fa-paper-plane"></i> Envoyer ma demande
             </button>
           </form>
           <p style="margin-top:16px; font-size:0.9rem; color:#5f5a52; text-align:center;">
-            <i class="fas fa-lock" style="margin-right:6px;"></i> Paiement sécurisé – Vos données sont protégées.
+            <i class="fas fa-lock" style="margin-right:6px;"></i> Vos données sont confidentielles.
           </p>
         </div>
 
-        <!-- Infos côté -->
+        <!-- Infos sur l'impact -->
         <div class="donation-info">
-          <h4><i class="fas fa-info-circle"></i> Impact de votre don</h4>
+          <h4><i class="fas fa-info-circle"></i> L’impact de votre générosité</h4>
           <ul>
-            <li><i class="fas fa-utensils"></i> 10 € = 20 repas pour un enfant</li>
-            <li><i class="fas fa-book"></i> 25 € = un kit scolaire complet</li>
-            <li><i class="fas fa-heartbeat"></i> 50 € = soins médicaux pour une famille</li>
-            <li><i class="fas fa-hand-holding-heart"></i> 100 € = parrainage d’un élève pour un mois</li>
+            <li><i class="fas fa-utensils"></i> Des repas pour les enfants</li>
+            <li><i class="fas fa-book"></i> Des kits scolaires et fournitures</li>
+            <li><i class="fas fa-heartbeat"></i> Des soins médicaux essentiels</li>
+            <li><i class="fas fa-hand-holding-heart"></i> Un parrainage éducatif</li>
           </ul>
-          <div class="highlight">
-            <i class="fas fa-receipt" style="margin-right:10px;"></i>
-            <strong>Reçu fiscal</strong> – Chaque don ouvre droit à une réduction d’impôt de 66 %.
-          </div>
         </div>
       </div>
     </div>
@@ -582,92 +488,35 @@
   <!-- FOOTER -->
   <footer>
     <div class="container">
-      <div class="socials">
-        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-      </div>
       <p>&copy; 2026 ONG Pedro Opeka – Tous droits réservés.</p>
-      <p style="margin-top:8px; font-size:0.8rem;">
-        <i class="fas fa-envelope" style="margin-right:6px;"></i> contact@ongpedroopeka.org
+      <p style="margin-top:8px; font-size:0.9rem;">
+        <i class="fas fa-envelope" style="margin-right:8px;"></i> contact@ongpedroopeka.fr
       </p>
     </div>
   </footer>
 
   <script>
     (function() {
-      // Gestion des boutons de montant prédéfinis
-      const amountButtons = document.querySelectorAll('.amount-options button');
-      const customAmountInput = document.getElementById('customAmount');
-      let selectedAmount = null;
+      const form = document.getElementById('contactForm');
 
-      function deselectAll() {
-        amountButtons.forEach(btn => btn.classList.remove('active'));
-      }
-
-      amountButtons.forEach(btn => {
-        btn.addEventListener('click', function() {
-          deselectAll();
-          this.classList.add('active');
-          selectedAmount = parseInt(this.dataset.amount, 10);
-          customAmountInput.value = ''; // efface le champ personnalisé
-        });
-      });
-
-      customAmountInput.addEventListener('input', function() {
-        if (this.value !== '') {
-          deselectAll();
-          selectedAmount = parseFloat(this.value);
-        } else {
-          // si le champ est vide, on garde la sélection précédente
-          // mais on ne désélectionne pas automatiquement
-        }
-      });
-
-      // Gestion du formulaire
-      const form = document.getElementById('donationForm');
       form.addEventListener('submit', function(e) {
         e.preventDefault();
 
-        // Récupération du montant
-        let amount = selectedAmount;
-        if (!amount || isNaN(amount) || amount <= 0) {
-          // Si le champ personnalisé a une valeur, on l'utilise
-          const customVal = parseFloat(customAmountInput.value);
-          if (!isNaN(customVal) && customVal > 0) {
-            amount = customVal;
-          } else {
-            alert('Veuillez sélectionner ou saisir un montant valide (minimum 1 €).');
-            return;
-          }
-        }
-
-        // Vérification du montant minimum
-        if (amount < 1) {
-          alert('Le montant minimum est de 1 €.');
-          return;
-        }
-
-        // Récupération des autres champs
+        // Récupération des champs
         const fullName = document.getElementById('fullName').value.trim();
         const email = document.getElementById('email').value.trim();
-        const paymentMethod = document.getElementById('paymentMethod').value;
+        const message = document.getElementById('message').value.trim();
 
         if (!fullName || !email) {
           alert('Veuillez remplir votre nom et votre e-mail.');
           return;
         }
 
-        // Simulation d'envoi (à remplacer par un vrai appel API)
-        const message = `Merci ${fullName} ! Votre don de ${amount.toFixed(2)} € via ${paymentMethod} a bien été pris en compte. Un e-mail de confirmation vous sera envoyé à ${email}.`;
-        alert(message);
+        // Simulation d'envoi
+        alert(`Merci ${fullName} ! Votre demande a aabien été envoyée.\nNous vous recontacterons dans les plus brefs délais à l’adresse : ${email}.\n\nMessage : ${message || 'Aucun message supplémentaire.'}`);
 
-        // Réinitialisation (optionnel)
+        // Réinitialisation du formulaire
         form.reset();
-        deselectAll();
-        selectedAmount = null;
-        customAmountInput.value = '';
       });
     })();
   </script>
