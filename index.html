@@ -1,0 +1,1936 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ONG PEDRO OPEKA : découvrez les actions sociales et humanitaires autour d’Akamasoa, le logement, l’éducation, la santé, le travail, la formation et l’accompagnement des familles.">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="theme-color" content="#173f3a">
+  <meta name="author" content="ONG PEDRO OPEKA">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <link rel="canonical" href="https://ongpedroopeka.fr/">
+  <link rel="alternate" hreflang="fr-FR" href="https://ongpedroopeka.fr/">
+  <link rel="alternate" hreflang="fr" href="https://ongpedroopeka.fr/">
+  <link rel="alternate" hreflang="x-default" href="https://ongpedroopeka.fr/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:title" content="ONG PEDRO OPEKA | Action sociale et humanitaire">
+  <meta property="og:description" content="Découvrez les œuvres et actions sociales présentées par l’ONG PEDRO OPEKA : logement, éducation, santé, emploi et accompagnement.">
+  <meta property="og:url" content="https://ongpedroopeka.fr/">
+  <meta property="og:site_name" content="ONG PEDRO OPEKA">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="ONG PEDRO OPEKA | Action sociale et humanitaire">
+  <meta name="twitter:description" content="Les œuvres et actions sociales de l’ONG PEDRO OPEKA.">
+
+  <title>ONG PEDRO OPEKA | Action sociale et humanitaire</title>
+
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  <link rel="preconnect" href="https://www.perepedro-akamasoa.net" crossorigin>
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"></noscript>
+
+  <style>
+    :root{
+      --green:#173f3a;
+      --green-2:#245c54;
+      --gold:#d8ad55;
+      --gold-light:#f4e3b8;
+      --cream:#faf7f0;
+      --sand:#efe7d8;
+      --text:#292821;
+      --muted:#6d6a61;
+      --white:#fff;
+      --shadow:0 18px 50px rgba(27,39,35,.10);
+      --radius:22px;
+    }
+
+    *{margin:0;padding:0;box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      font-family:Inter,Segoe UI,Roboto,system-ui,-apple-system,sans-serif;
+      background:var(--cream);
+      color:var(--text);
+      line-height:1.65;
+    }
+    img{display:block;width:100%;height:100%;object-fit:cover}
+    a{text-decoration:none;color:inherit}
+    button,input,textarea{font:inherit}
+    .container{width:min(1180px,calc(100% - 36px));margin:auto}
+
+    /* HEADER */
+    header{
+      position:sticky;top:0;z-index:1000;
+      background:rgba(23,63,58,.96);
+      backdrop-filter:blur(12px);
+      color:#fff;
+      box-shadow:0 3px 20px rgba(0,0,0,.12);
+    }
+    .nav-wrap{
+      min-height:76px;display:flex;align-items:center;justify-content:space-between;
+      gap:24px;
+    }
+    .brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:.2px}
+    .brand-icon{
+      width:44px;height:44px;border-radius:14px;display:grid;place-items:center;
+      background:var(--gold);color:var(--green);font-size:1.25rem;
+    }
+    .brand small{display:block;font-size:.72rem;opacity:.72;font-weight:500;letter-spacing:1px;text-transform:uppercase}
+    .brand strong{font-size:1.05rem}
+    nav{display:none!important}
+
+    .header-sections{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:9px;
+      padding:11px 18px;
+      border:0;
+      border-radius:999px;
+      background:var(--gold);
+      color:var(--green);
+      font-weight:800;
+      white-space:nowrap;
+      cursor:pointer;
+      box-shadow:0 4px 14px rgba(0,0,0,.12);
+    }
+    .header-sections:hover{
+      background:var(--gold-light);
+      transform:translateY(-1px);
+    }
+
+
+    /* HERO */
+    .hero{
+      position:relative;min-height:680px;display:grid;align-items:end;overflow:hidden;
+      color:#fff;
+      background:var(--green);
+    }
+    .hero::after{
+      content:"";position:absolute;inset:auto 0 0;height:170px;
+      background:linear-gradient(transparent,var(--cream));
+    }
+    .hero-content{position:relative;z-index:1;padding:90px 0 120px;max-width:790px}
+    .eyebrow{
+      display:inline-flex;align-items:center;gap:9px;
+      color:var(--gold-light);font-weight:800;font-size:.83rem;letter-spacing:1.5px;
+      text-transform:uppercase;margin-bottom:18px;
+    }
+    .hero h1{font-size:clamp(2.5rem,6vw,5.1rem);line-height:1.03;letter-spacing:-2px;margin-bottom:22px}
+    .hero h1 span{color:var(--gold-light)}
+    .hero p{font-size:clamp(1.05rem,2vw,1.28rem);max-width:690px;color:rgba(255,255,255,.91)}
+    .hero-actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:32px}
+    .btn{
+      display:inline-flex;align-items:center;justify-content:center;gap:9px;
+      border:0;border-radius:999px;padding:13px 22px;font-weight:800;cursor:pointer;transition:.2s;
+    }
+    .btn-primary{background:var(--gold);color:var(--green)}
+    .btn-primary:hover{transform:translateY(-2px);filter:brightness(.96)}
+    .btn-light{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.3);color:#fff}
+    .btn-light:hover{background:rgba(255,255,255,.2)}
+
+    /* SECTIONS */
+    section{padding:90px 0}
+    .section-head{max-width:760px;margin:0 auto 48px;text-align:center}
+    .section-kicker{color:var(--green-2);font-size:.78rem;text-transform:uppercase;letter-spacing:1.7px;font-weight:900}
+    .section-title{color:var(--green);font-size:clamp(2rem,4vw,3rem);line-height:1.1;margin:9px 0 15px}
+    .section-head p{color:var(--muted)}
+
+    /* INTRO */
+    .intro{padding-top:35px}
+    .intro-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
+    .story p{margin-bottom:17px;color:#4e4a42}
+    .story strong{color:var(--green)}
+    .quote{
+      border-left:4px solid var(--gold);padding:15px 20px;margin-top:26px;
+      background:#fff;border-radius:0 16px 16px 0;box-shadow:var(--shadow);font-weight:700;color:var(--green);
+    }
+    .portrait{height:520px;border-radius:28px;overflow:hidden;box-shadow:var(--shadow);position:relative}
+    .portrait .caption{
+      position:absolute;bottom:0;left:0;right:0;padding:18px 20px;
+      color:#fff;background:linear-gradient(transparent,rgba(0,0,0,.78));font-size:.84rem;
+    }
+
+    /* STATS */
+    .stats{background:var(--green);color:#fff}
+    .stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+    .stat{
+      padding:28px 20px;text-align:center;border:1px solid rgba(255,255,255,.12);
+      border-radius:20px;background:rgba(255,255,255,.055)
+    }
+    .stat strong{display:block;color:var(--gold-light);font-size:2.25rem;line-height:1.1;margin-bottom:7px}
+    .stat span{font-size:.92rem;color:rgba(255,255,255,.8)}
+
+    /* ACTIVITIES */
+    .activities{background:#fff}
+    .activity-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+    .card{
+      background:var(--cream);border:1px solid #e9e1d4;border-radius:var(--radius);
+      overflow:hidden;transition:.25s;box-shadow:0 8px 28px rgba(30,45,39,.045)
+    }
+    .card:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
+    .card-image{height:210px;overflow:hidden}
+    .card-image img{transition:.45s}
+    .card:hover .card-image img{transform:scale(1.04)}
+    .card-body{padding:23px}
+    .card-icon{
+      width:42px;height:42px;border-radius:13px;display:grid;place-items:center;
+      background:var(--gold-light);color:var(--green);margin-bottom:13px
+    }
+    .card h3{color:var(--green);font-size:1.2rem;margin-bottom:8px}
+    .card p{font-size:.93rem;color:var(--muted)}
+
+    /* TIMELINE */
+    .timeline-wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:50px;align-items:start}
+    .timeline-image{height:520px;border-radius:25px;overflow:hidden;box-shadow:var(--shadow)}
+    .timeline{border-left:2px solid #dfd4c2;padding-left:25px}
+    .event{position:relative;padding:0 0 28px}
+    .event::before{
+      content:"";position:absolute;width:13px;height:13px;border-radius:50%;
+      background:var(--gold);left:-33px;top:7px;border:3px solid var(--cream)
+    }
+    .event .year{color:var(--green-2);font-weight:900;font-size:.86rem}
+    .event h3{font-size:1.12rem;color:var(--green);margin:4px 0}
+    .event p{color:var(--muted);font-size:.93rem}
+
+    /* GALLERY */
+    .gallery{background:var(--sand)}
+    .gallery-grid{display:grid;grid-template-columns:1.25fr .75fr .75fr;grid-auto-rows:230px;gap:14px}
+    .gallery-item{border-radius:18px;overflow:hidden;position:relative;background:#ddd}
+    .gallery-item:first-child{grid-row:span 2}
+    .gallery-item img{transition:.35s}
+    .gallery-item:hover img{transform:scale(1.04)}
+    .gallery-item figcaption{
+      position:absolute;left:0;right:0;bottom:0;padding:13px 15px;color:#fff;font-size:.78rem;
+      background:linear-gradient(transparent,rgba(0,0,0,.72))
+    }
+    .source-note{text-align:center;margin-top:20px;font-size:.78rem;color:#716b60}
+
+    /* DONATION */
+    .donation{background:#fff}
+    .donation-grid{display:grid;grid-template-columns:1fr .72fr;gap:30px}
+    .form-box,.info-box{
+      border-radius:25px;background:var(--cream);padding:34px;box-shadow:var(--shadow);border:1px solid #ebe2d4
+    }
+    .form-box h3,.info-box h3{color:var(--green);font-size:1.5rem;margin-bottom:7px}
+    .form-box .lead{color:var(--muted);margin-bottom:25px}
+    .form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    .field{margin-bottom:17px}
+    label{display:block;font-weight:800;font-size:.88rem;margin-bottom:7px;color:#3b3932}
+    input,textarea,select{
+      width:100%;padding:13px 15px;border-radius:12px;border:1px solid #d9cfbe;
+      background:#fff;color:var(--text);outline:none
+    }
+    input:focus,textarea:focus,select:focus{border-color:var(--green);box-shadow:0 0 0 3px rgba(36,92,84,.08)}
+    textarea{min-height:125px;resize:vertical}
+    .form-box .btn{width:100%;border-radius:13px}
+    .privacy{font-size:.78rem;color:var(--muted);text-align:center;margin-top:13px}
+    .info-box ul{list-style:none;margin-top:18px}
+    .info-box li{display:flex;gap:12px;padding:12px 0;border-bottom:1px solid #e6ddcf;color:#555147}
+    .info-box li:last-child{border-bottom:0}
+    .info-box i{color:var(--gold);width:22px;text-align:center;padding-top:3px}
+    .notice{margin-top:20px;padding:15px;border-radius:14px;background:#f4e8ca;color:#5c4a27;font-size:.85rem}
+
+    /* FOOTER */
+    footer{background:#102f2b;color:#d8dedb;padding:38px 0 24px}
+    .footer-grid{display:grid;grid-template-columns:1.3fr .7fr .7fr;gap:35px}
+    footer h4{color:#fff;margin-bottom:11px}
+    footer p,footer li{font-size:.87rem;color:#b9c5c1}
+    footer ul{list-style:none;display:grid;gap:7px}
+    footer a:hover{color:var(--gold-light)}
+    .footer-bottom{border-top:1px solid rgba(255,255,255,.1);margin-top:28px;padding-top:18px;font-size:.76rem;color:#91a09b}
+    .disclaimer{margin-top:10px}
+
+    /* RESPONSIVE */
+    @media(max-width:980px){
+      nav{display:none}
+      .stats-grid{grid-template-columns:repeat(2,1fr)}
+      .activity-grid{grid-template-columns:repeat(2,1fr)}
+      .intro-grid,.timeline-wrap,.donation-grid{grid-template-columns:1fr}
+      .portrait{height:450px}
+      .timeline-image{height:400px}
+      .footer-grid{grid-template-columns:1fr 1fr}
+    }
+    @media(max-width:650px){
+      .container{width:min(100% - 24px,1180px)}
+      .hero{min-height:620px}
+      .hero-content{padding:70px 0 105px}
+      .hero h1{letter-spacing:-1px}
+      section{padding:65px 0}
+      .activity-grid,.form-row,.footer-grid{grid-template-columns:1fr}
+      .gallery-grid{grid-template-columns:1fr 1fr;grid-auto-rows:180px}
+      .gallery-item:first-child{grid-row:span 1;grid-column:span 2}
+      .form-box,.info-box{padding:23px}
+      .header-sections{padding:9px 13px;font-size:.82rem}
+
+      .brand small{display:none}
+
+      .brand strong{font-size:.92rem}
+      .header-sections{padding:9px 12px;font-size:.8rem}
+    }
+  
+
+    @media(max-width:650px){
+      .stats-groups{grid-template-columns:1fr;gap:18px}
+      .stats-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+      .stat{padding:20px 10px}
+      .stat strong{font-size:1.65rem}
+      .stat span{font-size:.78rem}
+    }
+
+    /* ----- FORMULAIRE RECEVOIR UN DON ----- */
+    .receive-section {
+      background: #f7f4ee;
+      padding: 80px 0;
+    }
+
+    .receive-container {
+      max-width: 850px;
+      margin: 0 auto;
+    }
+
+    .receive-form-card {
+      background: #ffffff;
+      border: 1px solid #e5ded2;
+      border-radius: 20px;
+      padding: 34px;
+      box-shadow: 0 14px 40px rgba(30, 58, 63, 0.08);
+    }
+
+    .receive-intro {
+      text-align: center;
+      max-width: 680px;
+      margin: -10px auto 28px;
+      color: #5f5a52;
+      line-height: 1.7;
+    }
+
+    .receive-form-card .form-group {
+      margin-bottom: 18px;
+    }
+
+    .receive-form-card label {
+      display: block;
+      margin-bottom: 7px;
+      font-weight: 700;
+      color: #1e3a3f;
+    }
+
+    .receive-form-card input,
+    .receive-form-card select,
+    .receive-form-card textarea {
+      width: 100%;
+      padding: 13px 14px;
+      border: 1px solid #d8d0c3;
+      border-radius: 10px;
+      font: inherit;
+      background: #fff;
+      color: #2d2a26;
+      box-sizing: border-box;
+    }
+
+    .receive-form-card textarea {
+      min-height: 125px;
+      resize: vertical;
+    }
+
+    .receive-form-card input:focus,
+    .receive-form-card select:focus,
+    .receive-form-card textarea:focus {
+      outline: none;
+      border-color: #c9a45c;
+      box-shadow: 0 0 0 3px rgba(201, 164, 92, 0.14);
+    }
+
+    .receive-submit {
+      width: 100%;
+      margin-top: 8px;
+    }
+
+    .form-separator {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin: 28px 0;
+      color: #8b8173;
+      font-size: 0.9rem;
+    }
+
+    .form-separator::before,
+    .form-separator::after {
+      content: "";
+      flex: 1;
+      height: 1px;
+      background: #ded6ca;
+    }
+
+    @media (max-width: 700px) {
+      .receive-form-card {
+        padding: 24px 18px;
+      }
+    }
+    /* ----- STATISTIQUES : SECTIONS PROPRES ET INDÉPENDANTES ----- */
+    .stats{
+      background:var(--green);
+      color:#fff;
+    }
+
+    .stats-groups{
+      display:grid;
+      grid-template-columns:repeat(2,minmax(0,1fr));
+      gap:24px;
+      align-items:stretch;
+    }
+
+    .stats-group{
+      background:rgba(255,255,255,.055);
+      border:1px solid rgba(255,255,255,.14);
+      border-radius:24px;
+      padding:24px;
+      box-shadow:0 10px 30px rgba(0,0,0,.08);
+    }
+
+    .stats-group h3{
+      color:var(--gold-light);
+      font-size:1.15rem;
+      margin-bottom:6px;
+    }
+
+    .stats-group > p{
+      color:rgba(255,255,255,.68);
+      font-size:.88rem;
+      margin-bottom:18px;
+    }
+
+    .stats-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;width:100%;}
+
+    .stat{
+      min-width:0;
+      padding:24px 16px;
+      text-align:center;
+      border:1px solid rgba(255,255,255,.12);
+      border-radius:18px;
+      background:rgba(255,255,255,.055);
+    }
+
+    .stat strong{
+      display:block;
+      color:var(--gold-light);
+      font-size:2rem;
+      line-height:1.1;
+      margin-bottom:7px;
+    }
+
+    .stat span{
+      font-size:.9rem;
+      color:rgba(255,255,255,.8);
+    }
+
+    /* ----- DEUX FORMULAIRES : SÉPARATION VISUELLE CLAIRE ----- */
+    .forms-section{
+      margin-top:28px;
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:28px;
+      align-items:start;
+    }
+
+    .donation-grid{
+      display:block;
+    }
+
+    .donation-form-card,
+    .receive-form-card{
+      border-radius:25px;
+      background:var(--cream);
+      padding:34px;
+      box-shadow:var(--shadow);
+      border:1px solid #ebe2d4;
+    }
+
+    .donation-form-card{
+      border-top:5px solid var(--gold);
+    }
+
+    .receive-form-card{
+      border-top:5px solid var(--green-2);
+    }
+
+    .form-card-title{
+      display:flex;
+      align-items:center;
+      gap:12px;
+      margin-bottom:8px;
+    }
+
+    .form-card-title .card-icon{
+      flex:0 0 auto;
+      margin:0;
+    }
+
+    .form-card-title h3{
+      margin:0;
+      color:var(--green);
+      font-size:1.45rem;
+    }
+
+    .form-card-lead{
+      color:var(--muted);
+      margin-bottom:24px;
+    }
+
+    .receive-form-card .receive-intro{
+      text-align:left;
+      max-width:none;
+      margin:0 0 24px;
+    }
+
+    .receive-form-card .form-group{
+      margin-bottom:17px;
+    }
+
+    .receive-form-card .receive-submit{
+      width:100%;
+      border-radius:13px;
+    }
+
+    @media(max-width:980px){
+      .stats-groups,
+      .forms-section{
+        grid-template-columns:1fr;
+      }
+    }
+
+    @media(max-width:650px){
+
+      .stats-group,
+      .donation-form-card,
+      .receive-form-card{
+        padding:23px;
+      }
+    }
+    /* ----- FORMULAIRES DANS DES SECTIONS INDÉPENDANTES ----- */
+    .donation-form-section{
+      background:#fff;
+      padding:75px 0;
+    }
+    .help-form-section{
+      background:var(--sand);
+      padding:75px 0;
+    }
+    .single-form-container{
+      max-width:820px;
+      margin:0 auto;
+    }
+    .form-box-full{
+      background:var(--cream);
+      border:1px solid #ebe2d4;
+      border-radius:25px;
+      padding:34px;
+      box-shadow:var(--shadow);
+    }
+    .form-box-full.donation-card{
+      border-top:5px solid var(--gold);
+    }
+    .form-box-full.help-card{
+      border-top:5px solid var(--green-2);
+    }
+
+    @media(max-width:650px){
+      .form-box-full{
+        padding:23px;
+      }
+      .currency-selector{
+        flex-direction:row;
+      }
+    }
+
+  
+    /* ----- ACTIONS FLOTTANTES : IA + MENU DES SECTIONS ----- */
+    .floating-tools{
+      position:fixed;
+      right:22px;
+      bottom:22px;
+      z-index:3000;
+      display:flex;
+      flex-direction:column;
+      align-items:flex-end;
+      gap:12px;
+    }
+
+    .float-btn{
+      border:0;
+      cursor:pointer;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:9px;
+      min-width:54px;
+      height:54px;
+      padding:0 17px;
+      border-radius:999px;
+      box-shadow:0 12px 30px rgba(0,0,0,.22);
+      font-weight:800;
+      transition:transform .2s, box-shadow .2s;
+    }
+
+    .float-btn:hover{
+      transform:translateY(-2px);
+      box-shadow:0 16px 34px rgba(0,0,0,.27);
+    }
+
+    .float-ai{
+      background:var(--gold);
+      color:var(--green);
+    }
+
+    .float-menu{
+      background:var(--green);
+      color:#fff;
+    }
+
+    .float-panel{
+      width:min(320px,calc(100vw - 36px));
+      background:#fff;
+      color:var(--text);
+      border:1px solid #e7dfd1;
+      border-radius:20px;
+      box-shadow:0 20px 55px rgba(0,0,0,.22);
+      overflow:hidden;
+      display:none;
+      animation:floatIn .18s ease-out;
+    }
+
+    .float-panel.open{display:block}
+
+    .float-panel-head{
+      padding:15px 17px;
+      background:var(--green);
+      color:#fff;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:12px;
+    }
+
+    .float-panel-head strong{font-size:.98rem}
+    .float-close{
+      border:0;
+      background:transparent;
+      color:#fff;
+      cursor:pointer;
+      font-size:1rem;
+      padding:4px 7px;
+    }
+
+    .section-menu-list{
+      list-style:none;
+      padding:8px;
+      max-height:55vh;
+      overflow:auto;
+    }
+
+    .section-menu-list a{
+      display:flex;
+      align-items:center;
+      gap:11px;
+      padding:11px 12px;
+      border-radius:12px;
+      color:var(--green);
+      font-weight:700;
+      font-size:.9rem;
+    }
+
+    .section-menu-list a:hover{
+      background:#f2eee6;
+    }
+
+    .section-menu-list i{
+      width:24px;
+      text-align:center;
+      color:var(--gold);
+    }
+
+    .ai-panel{
+      padding:17px;
+    }
+
+    .ai-message{
+      background:#f4f0e8;
+      border-radius:14px;
+      padding:12px 13px;
+      font-size:.88rem;
+      margin-bottom:12px;
+    }
+
+    .ai-actions{
+      display:grid;
+      gap:8px;
+    }
+
+    .ai-action{
+      border:1px solid #ded6c8;
+      background:#fff;
+      color:var(--green);
+      border-radius:11px;
+      padding:10px 12px;
+      text-align:left;
+      cursor:pointer;
+      font-weight:700;
+      font-size:.84rem;
+    }
+
+    .ai-action:hover{background:#f5f1e9}
+
+    .ai-note{
+      margin-top:12px;
+      font-size:.72rem;
+      color:var(--muted);
+    }
+
+    @keyframes floatIn{
+      from{opacity:0;transform:translateY(7px)}
+      to{opacity:1;transform:translateY(0)}
+    }
+
+    @media(max-width:650px){
+      .floating-tools{
+        right:14px;
+        bottom:14px;
+      }
+      .float-btn{
+        height:50px;
+        min-width:50px;
+        padding:0 14px;
+      }
+      .float-btn span{display:none}
+    }
+
+
+    .header-sections.icon-only{
+      width:48px;
+      height:48px;
+      padding:0;
+      border-radius:50%;
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      font-size:1.1rem;
+    }
+
+    .ai-panel{
+      width:min(390px, calc(100vw - 28px));
+    }
+    .ai-message{
+      max-height:300px;
+      overflow-y:auto;
+      scroll-behavior:smooth;
+    }
+    .ai-chat-log{
+      display:flex;
+      flex-direction:column;
+      gap:10px;
+      margin-bottom:12px;
+    }
+    .ai-bubble{
+      max-width:92%;
+      padding:10px 12px;
+      border-radius:14px;
+      font-size:.88rem;
+      line-height:1.45;
+      white-space:pre-wrap;
+    }
+    .ai-bubble.bot{
+      align-self:flex-start;
+      background:#eef5f1;
+      color:var(--green);
+      border:1px solid #dce9e2;
+    }
+    .ai-bubble.user{
+      align-self:flex-end;
+      background:var(--green);
+      color:#fff;
+    }
+    .ai-input-row{
+      display:flex;
+      gap:8px;
+      margin-top:12px;
+    }
+    .ai-input-row input{
+      flex:1;
+      min-width:0;
+      border:1px solid #d8d2c8;
+      border-radius:12px;
+      padding:11px 12px;
+      font:inherit;
+      outline:none;
+    }
+    .ai-input-row input:focus{
+      border-color:var(--green-2);
+      box-shadow:0 0 0 3px rgba(14,104,93,.10);
+    }
+    .ai-send{
+      flex:0 0 auto;
+      border:0;
+      border-radius:12px;
+      padding:0 14px;
+      background:var(--gold);
+      color:var(--green);
+      font-weight:800;
+      cursor:pointer;
+    }
+    .ai-mail{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:7px;
+      width:100%;
+      margin-top:10px;
+      padding:10px 12px;
+      border-radius:12px;
+      background:#fff;
+      color:var(--green);
+      border:1px solid #d8d2c8;
+      text-decoration:none;
+      font-weight:800;
+      font-size:.82rem;
+    }
+    .ai-mail:hover{
+      background:#f7f3ea;
+    }
+    .ai-status{
+      margin-top:8px;
+      color:var(--muted);
+      font-size:.72rem;
+      text-align:center;
+    }
+
+  
+    .hero-image{
+      position:absolute;
+      inset:0;
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      z-index:0;
+      background:#173f3a;
+    }
+    .hero::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      z-index:0;
+      background:linear-gradient(90deg,rgba(8,31,27,.88) 0%,rgba(8,31,27,.62) 45%,rgba(8,31,27,.24) 100%);
+      pointer-events:none;
+    }
+
+    /* Modal devise */
+    .currency-trigger{
+      width:100%;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:10px;
+      margin:-8px 0 20px;
+      padding:13px 15px;
+      border:1px solid #d9cfbe;
+      border-radius:12px;
+      background:#fff;
+      color:var(--green);
+      font-weight:800;
+      cursor:pointer;
+    }
+    .currency-trigger span{flex:1;text-align:left}
+    .currency-trigger:hover{border-color:var(--green)}
+    .currency-modal{
+      position:fixed;
+      inset:0;
+      z-index:5000;
+      display:none;
+      align-items:center;
+      justify-content:center;
+      padding:18px;
+    }
+    .currency-modal.open{display:flex}
+    .currency-backdrop{
+      position:absolute;
+      inset:0;
+      background:rgba(5,24,21,.62);
+      backdrop-filter:blur(4px);
+    }
+    .currency-dialog{
+      position:relative;
+      z-index:1;
+      width:min(430px,100%);
+      background:var(--cream);
+      border-radius:24px;
+      padding:30px;
+      box-shadow:0 25px 80px rgba(0,0,0,.3);
+    }
+    .currency-dialog h3{color:var(--green);font-size:1.45rem;margin:0 0 7px}
+    .currency-dialog p{color:var(--muted);margin-bottom:20px}
+    .currency-modal-close{
+      position:absolute;
+      top:12px;
+      right:12px;
+      width:38px;
+      height:38px;
+      border:0;
+      border-radius:50%;
+      background:#eee8dc;
+      color:var(--green);
+      cursor:pointer;
+    }
+    .currency-options{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:12px;
+    }
+    .currency-option{
+      border:2px solid #ded6c8;
+      border-radius:16px;
+      padding:18px 14px;
+      background:#fff;
+      color:var(--green);
+      cursor:pointer;
+      text-align:left;
+    }
+    .currency-option.active{
+      border-color:var(--gold);
+      box-shadow:0 0 0 3px rgba(216,173,85,.16);
+    }
+    .currency-option strong{display:block;font-size:1.15rem}
+    .currency-option span{display:block;color:var(--muted);font-size:.8rem;margin-top:4px}
+
+    /* Optimisations de rendu */
+    .card,.stats-group,.form-box-full,.portrait,.timeline-image,.gallery-item{
+      contain:layout paint;
+    }
+    section{content-visibility:auto;contain-intrinsic-size:1px 650px}
+    .hero,.intro{content-visibility:visible}
+    @media(prefers-reduced-motion:reduce){
+      *,*::before,*::after{scroll-behavior:auto!important;animation-duration:.001ms!important;transition-duration:.001ms!important}
+    }
+
+  
+    /* Menu des sections : directement rattaché à l'en-tête */
+    header .header-inner{position:relative}
+    header #sectionPanel{
+      position:absolute;
+      top:calc(100% + 10px);
+      right:0;
+      width:min(360px,calc(100vw - 24px));
+      max-height:min(72vh,620px);
+      overflow:auto;
+      z-index:4100;
+      border-radius:0 0 22px 22px;
+      border:1px solid rgba(23,63,58,.16);
+      box-shadow:0 18px 50px rgba(0,0,0,.24);
+    }
+    header #sectionPanel.open{display:block}
+    @media(max-width:650px){
+      header #sectionPanel{
+        right:0;
+        width:min(360px,calc(100vw - 24px));
+        max-height:calc(100vh - 115px);
+        border-radius:0 0 20px 20px;
+      }
+    }
+
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@graph":[
+      {
+        "@type":"Organization",
+        "@id":"https://ongpedroopeka.fr/#organization",
+        "name":"ONG PEDRO OPEKA",
+        "url":"https://ongpedroopeka.fr/",
+        "email":"contact@ongpedroopeka.fr",
+        "description":"Organisation présentant des actions sociales et humanitaires autour d'Akamasoa : logement, éducation, santé, travail, formation et accompagnement des familles."
+      },
+      {
+        "@type":"WebSite",
+        "@id":"https://ongpedroopeka.fr/#website",
+        "url":"https://ongpedroopeka.fr/",
+        "name":"ONG PEDRO OPEKA",
+        "inLanguage":"fr-FR",
+        "publisher":{"@id":"https://ongpedroopeka.fr/#organization"}
+      }
+    ]
+  }
+  </script>
+
+</head>
+
+<body>
+
+  <noscript>
+    <div style="padding:12px 16px;background:#f4e8ca;color:#173f3a;text-align:center;font:600 14px system-ui">
+      JavaScript est désactivé. Les informations essentielles et les formulaires restent accessibles.
+    </div>
+  </noscript>
+
+  <header>
+    <div class="container nav-wrap">
+      <a href="#accueil" class="brand" aria-label="Accueil">
+        <span class="brand-icon"><i class="fa-solid fa-hands-holding-child"></i></span>
+        <span><small>ONG</small><strong>ONG PEDRO OPEKA</strong></span>
+      </a>
+
+      <nav aria-label="Navigation principale">
+        <ul>
+          <li><a href="#mission">Mission</a></li>
+          <li><a href="#actions">Actions</a></li>
+          <li><a href="#histoire">Histoire</a></li>
+          <li><a href="#galerie">Galerie</a></li>
+          <li><a href="#don">Faire un don</a></li>
+          <li><a href="#demande-aide">Demander une aide</a></li>
+        </ul>
+      </nav>
+
+      <button id="sectionButton" class="header-sections icon-only" type="button"
+              aria-expanded="false" aria-controls="sectionPanel" aria-label="Ouvrir les sections"
+              title="Ouvrir les sections">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+
+
+    <div id="sectionPanel" class="float-panel" aria-hidden="true">
+      <div class="float-panel-head">
+        <strong><i class="fa-solid fa-compass"></i> Toutes les sections</strong>
+        <button class="float-close" type="button" data-close="sectionPanel" aria-label="Fermer">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <ul class="section-menu-list">
+        <li><a href="#accueil"><i class="fa-solid fa-house"></i><span>Accueil</span></a></li>
+        <li><a href="#mission"><i class="fa-solid fa-heart"></i> Mission</a></li>
+        <li><a href="#actions"><i class="fa-solid fa-people-group"></i> Nos actions</a></li>
+        <li><a href="#histoire"><i class="fa-solid fa-clock-rotate-left"></i> Histoire</a></li>
+        <li><a href="#galerie"><i class="fa-solid fa-images"></i> Galerie</a></li>
+        <li><a href="#don"><i class="fa-solid fa-hand-holding-heart"></i> Faire un don</a></li>
+        <li><a href="#demande-aide"><i class="fa-solid fa-hands-helping"></i> Demander une aide</a></li>
+        <li><a href="#contact"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="accueil">
+    <section class="hero">
+      <img class="hero-image" src="https://www.perepedro-akamasoa.net/wp-content/uploads/2015/08/biographie_021.jpg"
+               alt="" width="1600" height="900" fetchpriority="high" decoding="async">
+      <div class="container hero-content">
+        <h1>Donner une chance à la <span>dignité.</span></h1>
+        <p>
+          Découvrez l’action du Père Pedro Opeka et d’Akamasoa :
+          logements, éducation, santé, travail, formation, accueil des familles
+          démunies et développement communautaire.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#actions"><i class="fa-solid fa-arrow-down"></i> Découvrir les actions</a>
+          <a class="btn btn-light" href="#don"><i class="fa-solid fa-hand-holding-heart"></i> Je souhaite soutenir</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="mission" class="intro">
+      <div class="container intro-grid">
+        <div class="story">
+          <div class="section-kicker">Une action construite avec les familles</div>
+          <h2 class="section-title">Le projet Akamasoa</h2>
+          <p>
+            Le Père Pedro Opeka est un prêtre lazariste qui a consacré une grande partie
+            de sa vie au service des populations pauvres de Madagascar. Après son arrivée
+            à Antananarivo en 1989, il découvre la situation des familles vivant autour
+            de la décharge d’Andralanitra et choisit d’agir avec elles.
+          </p>
+          <p>
+            L’approche d’Akamasoa repose notamment sur trois bases : <strong>un logement,
+            une école et un travail</strong>. L’objectif n’est pas seulement de distribuer
+            une aide ponctuelle, mais de créer des conditions permettant aux familles de
+            reconstruire leur avenir et leur autonomie.
+          </p>
+          <p>
+            Au fil des années, cette démarche a donné naissance à des villages, des écoles,
+            des centres de santé, des ateliers, des infrastructures communautaires et des
+            activités génératrices d’emploi.
+          </p>
+          <div class="quote">
+            <i class="fa-solid fa-quote-left"></i>
+            « Aider la personne sans l’assister, mais en lui donnant les moyens de gagner
+            son autonomie et de construire son avenir. »
+          </div>
+        </div>
+
+        <figure class="portrait">
+          <img src="https://www.perepedro-akamasoa.net/wp-content/uploads/2015/08/biographie_021.jpg"
+               alt="Père Pedro Opeka entouré d'enfants à Madagascar" loading="eager">
+          <figcaption class="caption">Père Pedro Opeka — photographie publiée dans la biographie d’Akamasoa.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="stats" aria-label="Chiffres clés 2025">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-kicker" style="color:#f4e3b8">Repères 2025</div>
+          <h2 class="section-title" style="color:#fff">Une action à grande échelle</h2>
+          <p style="color:rgba(255,255,255,.72)">
+            Les statistiques sont regroupées par thème pour une lecture plus claire.
+          </p>
+        </div>
+
+        <div class="stats-groups">
+          <div class="stats-group">
+            <h3><i class="fa-solid fa-house"></i> Habitat et communautés</h3>
+            <p>Les réalisations concrètes liées aux villages et au logement.</p>
+            <div class="stats-grid">
+              <div class="stat">
+                <strong>22</strong>
+                <span>villages construits</span>
+              </div>
+              <div class="stat">
+                <strong>4 200+</strong>
+                <span>maisons construites</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="stats-group">
+            <h3><i class="fa-solid fa-graduation-cap"></i> Éducation et emploi</h3>
+            <p>Les personnes accompagnées par l’éducation et le travail.</p>
+            <div class="stats-grid">
+              <div class="stat">
+                <strong>21 529</strong>
+                <span>enfants scolarisés</span>
+              </div>
+              <div class="stat">
+                <strong>3 740</strong>
+                <span>personnes rémunérées par l’association</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="actions" class="activities">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-kicker">Les activités</div>
+          <h2 class="section-title">Une réponse globale à la pauvreté</h2>
+          <p>
+            L’action d’Akamasoa ne se limite pas à l’aide alimentaire : elle associe
+            accueil, logement, éducation, santé, emploi, formation et vie communautaire.
+          </p>
+        </div>
+
+        <div class="activity-grid">
+          <article class="card">
+            <div class="card-image">
+              <img src="https://www.perepedro-akamasoa.net/wp-content/uploads/2019/02/20190207_111443-1024x498.jpg" alt="Élèves d'Akamasoa dans une école" loading="lazy" decoding="async" width="700" height="400">
+            </div>
+            <div class="card-body">
+              <div class="card-icon"><i class="fa-solid fa-school"></i></div>
+              <h3>Éducation</h3>
+              <p>Crèches, maternelles, écoles, collèges, lycées et enseignement supérieur, avec également de la formation professionnelle.</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-image">
+              <img src="https://www.perepedro-akamasoa.net/wp-content/uploads/2016/02/20140221_061631-700x394-300x169.jpg" alt="Soins dans un centre de santé Akamasoa" loading="lazy" decoding="async" width="700" height="400">
+            </div>
+            <div class="card-body">
+              <div class="card-icon"><i class="fa-solid fa-heart-pulse"></i></div>
+              <h3>Santé</h3>
+              <p>Dispensaires et structures de soins, maternité, petite hospitalisation, prévention, dentisterie et accompagnement médical.</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-image">
+              <img src="https://www.perepedro-akamasoa.net/wp-content/uploads/2016/02/Carri%C3%A8re-700x467-300x200.jpg" alt="Travailleurs dans la carrière d'Akamasoa" loading="lazy" decoding="async" width="700" height="400">
+            </div>
+            <div class="card-body">
+              <div class="card-icon"><i class="fa-solid fa-person-digging"></i></div>
+              <h3>Travail et insertion</h3>
+              <p>Carrière, construction, maçonnerie, menuiserie, soudure, électricité, artisanat, entretien et autres emplois communautaires.</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-image">
+              <img src="https://www.perepedro-akamasoa.net/wp-content/uploads/2015/09/1-700x394.jpg" alt="Village et communauté Akamasoa à Madagascar" loading="lazy" decoding="async" width="700" height="400">
+            </div>
+            <div class="card-body">
+              <div class="card-icon"><i class="fa-solid fa-house-chimney"></i></div>
+              <h3>Logement</h3>
+              <p>Construction de maisons durables et d’infrastructures pour permettre aux familles de vivre dans un environnement digne.</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-image">
+              <img src="https://www.perepedro-akamasoa.net/wp-content/uploads/2015/12/20140219_053105.jpg" alt="Père Pedro avec des enfants d'un village Akamasoa" loading="lazy" decoding="async" width="700" height="400">
+            </div>
+            <div class="card-body">
+              <div class="card-icon"><i class="fa-solid fa-people-roof"></i></div>
+              <h3>Accueil et aide d’urgence</h3>
+              <p>Le Centre d’Accueil apporte notamment repas, vêtements, couvertures, savon, soins et hébergement temporaire selon les situations.</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-image">
+              <img src="https://www.perepedro-akamasoa.net/wp-content/uploads/2015/08/biographie_021.jpg" alt="Père Pedro Opeka avec des enfants" loading="lazy" decoding="async" width="700" height="400">
+            </div>
+            <div class="card-body">
+              <div class="card-icon"><i class="fa-solid fa-seedling"></i></div>
+              <h3>Environnement et autonomie</h3>
+              <p>Reboisement, pépinières, jardins, agriculture et projets comme la spiruline participent à la viabilité des communautés.</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-body">
+              <div class="card-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+              <h3>Formation professionnelle</h3>
+              <p>Les ateliers de menuiserie, mécanique, maçonnerie et autres métiers permettent aux jeunes d’acquérir des compétences pratiques.</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-body">
+              <div class="card-icon"><i class="fa-solid fa-people-group"></i></div>
+              <h3>Vie communautaire</h3>
+              <p>Akamasoa organise la vie des villages autour du travail, de la discipline, du respect, de la solidarité et de la responsabilité collective.</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-body">
+              <div class="card-icon"><i class="fa-solid fa-church"></i></div>
+              <h3>Vie spirituelle</h3>
+              <p>La vie spirituelle et les célébrations occupent une place importante dans la communauté, notamment lors de la messe dominicale.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="histoire">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-kicker">Repères historiques</div>
+          <h2 class="section-title">Du travail pastoral à Akamasoa</h2>
+          <p>Quelques étapes essentielles de l’engagement du Père Pedro Opeka.</p>
+        </div>
+
+        <div class="timeline-wrap">
+          <figure class="timeline-image">
+            <img src="https://www.perepedro-akamasoa.net/wp-content/uploads/2019/02/20190207_111443-1024x498.jpg" alt="Communauté scolaire d'Akamasoa" loading="lazy" decoding="async" width="700" height="400">
+          </figure>
+
+          <div class="timeline">
+            <div class="event">
+              <div class="year">1970</div>
+              <h3>Première arrivée à Madagascar</h3>
+              <p>Pedro Opeka arrive à Madagascar pour travailler notamment comme maçon à Vangaindrano et auprès des paysans.</p>
+            </div>
+            <div class="event">
+              <div class="year">1975–1976</div>
+              <h3>Ordination et retour à Madagascar</h3>
+              <p>Il est ordonné prêtre en 1975 puis reprend son engagement pastoral à Vangaindrano.</p>
+            </div>
+            <div class="event">
+              <div class="year">1989</div>
+              <h3>La rencontre avec les familles de la décharge</h3>
+              <p>À Antananarivo, il découvre les conditions de vie extrêmement difficiles de familles vivant sur la décharge d’Andralanitra.</p>
+            </div>
+            <div class="event">
+              <div class="year">1989–1990</div>
+              <h3>Premier village et naissance d’Akamasoa</h3>
+              <p>Des familles quittent la décharge pour créer Antolojanahary. L’Association Humanitaire Akamasoa est ensuite officialisée.</p>
+            </div>
+            <div class="event">
+              <div class="year">Aujourd’hui</div>
+              <h3>Un mouvement social durable</h3>
+              <p>Akamasoa développe des villages, écoles, centres de santé, emplois et activités communautaires à Madagascar.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="galerie" class="gallery">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-kicker">Images d’illustration</div>
+          <h2 class="section-title">Le terrain, les familles et les villages</h2>
+          <p>
+            Les photos ci-dessous proviennent de pages publiques consacrées à Akamasoa.
+            Elles sont chargées directement depuis leurs sources d’origine.
+          </p>
+        </div>
+
+        <div class="gallery-grid">
+          <figure class="gallery-item">
+            <img src="https://www.perepedro-akamasoa.net/wp-content/uploads/2015/08/biographie_021.jpg" alt="Père Pedro Opeka avec des enfants" loading="lazy" decoding="async" width="700" height="400">
+            <figcaption>Père Pedro Opeka — biographie Akamasoa</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="https://www.perepedro-akamasoa.net/wp-content/uploads/2015/12/20140219_053105.jpg" alt="Père Pedro avec des familles d'un village" loading="lazy" decoding="async" width="700" height="400">
+            <figcaption>Vie dans les villages</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="https://www.perepedro-akamasoa.net/wp-content/uploads/2016/02/Carri%C3%A8re-700x467-300x200.jpg" alt="Carrière d'Akamasoa" loading="lazy" decoding="async" width="700" height="400">
+            <figcaption>Travail à la carrière</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="https://www.perepedro-akamasoa.net/wp-content/uploads/2019/02/20190207_111443-1024x498.jpg" alt="Élèves d'Akamasoa" loading="lazy" decoding="async" width="700" height="400">
+            <figcaption>Éducation à Akamasoa</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="https://www.perepedro-akamasoa.net/wp-content/uploads/2016/02/20140221_061631-700x394-300x169.jpg" alt="Centre de santé Akamasoa" loading="lazy" decoding="async" width="700" height="400">
+            <figcaption>Santé et soins</figcaption>
+          </figure>
+        </div>
+
+        <p class="source-note">
+          Sources images : <strong>perepedro-akamasoa.net</strong>. Les images sont externes :
+          elles ne sont pas copiées dans ce fichier.
+        </p>
+      </div>
+    </section>
+
+    <!-- FORMULAIRE DE DON : SECTION INDÉPENDANTE -->
+    <section id="don" class="donation-form-section">
+      <div class="container single-form-container">
+        <div class="section-head">
+          <div class="section-kicker">Faire un don</div>
+          <h2 class="section-title">Faire un don</h2>
+          <p>
+            Choisissez votre devise et indiquez le montant de votre soutien.
+            Le formulaire présente les montants en euros (€) ou en dollars ($).
+          </p>
+        </div>
+
+        <div class="form-box-full donation-card">
+          <div class="form-card-title">
+            <div class="card-icon"><i class="fa-solid fa-hand-holding-heart"></i></div>
+            <h3>Votre contribution</h3>
+          </div>
+          <p class="form-card-lead">
+            Ce formulaire sert à établir un premier contact ; il n'effectue pas de paiement en ligne.
+          </p>
+          <button type="button" class="currency-trigger" id="currencyTrigger"
+                  aria-haspopup="dialog" aria-controls="currencyModal" aria-expanded="false">
+            <i class="fa-solid fa-coins"></i>
+            <span>Devise : <strong id="currencyTriggerLabel">€ EUR</strong></span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+
+
+          <form id="contactForm">
+            <div class="form-row">
+              <div class="field">
+                <label for="fullName">Nom complet</label>
+                <input type="text" id="fullName" placeholder="Jean Dupont" autocomplete="name" required>
+              </div>
+              <div class="field">
+                <label for="email">Adresse e-mail</label>
+                <input type="email" id="email" placeholder="jean@exemple.fr" autocomplete="email" required>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="type">Type de soutien</label>
+              <select id="type">
+                <option>Don financier</option>
+                <option>Don de matériel</option>
+                <option>Soutien à l'éducation</option>
+                <option>Soutien à la santé</option>
+                <option>Soutien au logement</option>
+                <option>Autre</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="amount">
+                Montant du don <span id="currencyLabel">en euros (€)</span>
+              </label>
+              <input type="number" id="amount" min="0" step="0.01" placeholder="Ex. 100" inputmode="decimal">
+              <p class="currency-hint">Devise choisie : <strong id="currencyCode">EUR</strong></p>
+            </div>
+
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea id="message" placeholder="Précisez votre intention, votre projet ou votre question…"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">
+              <i class="fa-solid fa-paper-plane"></i> Envoyer ma demande
+            </button>
+
+            <p class="privacy">
+              <i class="fa-solid fa-lock"></i>
+              Vos informations sont utilisées uniquement pour répondre à votre demande.
+            </p>
+          </form>
+
+        <div class="currency-modal" id="currencyModal" role="dialog" aria-modal="true"
+             aria-labelledby="currencyModalTitle" aria-hidden="true">
+          <div class="currency-backdrop" data-close-currency></div>
+          <div class="currency-dialog">
+            <button type="button" class="currency-modal-close" id="currencyModalClose"
+                    aria-label="Fermer le choix de la devise">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="card-icon"><i class="fa-solid fa-coins"></i></div>
+            <h3 id="currencyModalTitle">Choisir une devise</h3>
+            <p>Sélectionnez la devise à utiliser pour votre montant.</p>
+
+            <div class="currency-options">
+              <button type="button" class="currency-option active" data-currency-option="EUR">
+                <strong>€ EUR</strong>
+                <span>Euro</span>
+              </button>
+              <button type="button" class="currency-option" data-currency-option="USD">
+                <strong>$ USD</strong>
+                <span>Dollar américain</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FORMULAIRE D'AIDE : SECTION INDÉPENDANTE -->
+    <section id="demande-aide" class="help-form-section">
+      <div class="container single-form-container">
+        <div class="section-head">
+          <div class="section-kicker">Demande d’accompagnement</div>
+          <h2 class="section-title">Vous avez besoin d’une aide ?</h2>
+          <p>
+            Cette demande est volontairement séparée du formulaire de don afin de rendre
+            chaque démarche plus simple et plus claire.
+          </p>
+        </div>
+
+        <div class="form-box-full help-card">
+          <div class="form-card-title">
+            <div class="card-icon"><i class="fa-solid fa-hands-helping"></i></div>
+            <h3>Demander une aide</h3>
+          </div>
+          <p class="form-card-lead">
+            Présentez votre situation et la nature de votre besoin.
+          </p>
+
+          <form id="receiveDonationForm">
+            <div class="form-row">
+              <div class="field">
+                <label for="receiveFullName">Nom complet</label>
+                <input type="text" id="receiveFullName" placeholder="Votre nom complet" required>
+              </div>
+              <div class="field">
+                <label for="receiveEmail">Adresse e-mail</label>
+                <input type="email" id="receiveEmail" placeholder="vous@exemple.fr" required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="field">
+                <label for="receiveCountry">Pays</label>
+                <input type="text" id="receiveCountry" placeholder="Votre pays" required>
+              </div>
+              <div class="field">
+                <label for="receiveNeed">Nature de la demande</label>
+                <select id="receiveNeed" required>
+                  <option value="">Sélectionnez une demande</option>
+                  <option>Aide alimentaire</option>
+                  <option>Logement</option>
+                  <option>Éducation</option>
+                  <option>Santé</option>
+                  <option>Formation / emploi</option>
+                  <option>Autre</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="receiveAmount">Montant / valeur estimée (facultatif)</label>
+              <div style="display:flex;gap:10px;align-items:stretch;">
+                <select id="receiveCurrency" style="max-width:145px;">
+                  <option value="EUR">€ EUR</option>
+                  <option value="USD">$ USD</option>
+                </select>
+                <input type="number" id="receiveAmount" min="0" step="0.01"
+                       placeholder="Montant estimé" inputmode="decimal">
+              </div>
+              <p class="currency-hint">La devise affichée est toujours l’euro (€) ou le dollar ($).</p>
+            </div>
+
+            <div class="field">
+              <label for="receiveMessage">Décrivez votre situation</label>
+              <textarea id="receiveMessage" placeholder="Expliquez votre besoin ou votre situation…" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">
+              <i class="fa-solid fa-paper-plane"></i> Envoyer ma demande d’aide
+            </button>
+
+            <p class="privacy">
+              <i class="fa-solid fa-lock"></i>
+              Vos informations sont utilisées uniquement pour répondre à votre demande.
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <!-- OUTILS FLOTTANTS -->
+  <div class="floating-tools" aria-label="Outils rapides">
+    <div id="aiPanel" class="float-panel" aria-hidden="true">
+      <div class="float-panel-head">
+        <strong><i class="fa-solid fa-sparkles"></i> Assistant ONG PEDRO OPEKA</strong>
+        <button class="float-close" type="button" data-close="aiPanel" aria-label="Fermer">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <div class="ai-panel">
+        <div id="aiMessage" class="ai-message">
+          <div class="ai-chat-log" id="aiChatLog">
+            <div class="ai-bubble bot">
+              Bonjour 👋 Je suis l’assistant de l’ONG PEDRO OPEKA. Posez-moi une question
+              sur Akamasoa, les actions, l’éducation, la santé, le logement, l’emploi,
+              la formation, l’histoire ou les moyens de soutenir l’ONG.
+            </div>
+          </div>
+        </div>
+
+        <div class="ai-actions">
+          <button class="ai-action" type="button" data-ai-question="Quelles sont les actions de l’ONG ?">Actions de l’ONG</button>
+          <button class="ai-action" type="button" data-ai-question="Que fait Akamasoa pour le logement ?">Logement</button>
+          <button class="ai-action" type="button" data-ai-question="Que fait l’ONG dans l’éducation ?">Éducation</button>
+          <button class="ai-action" type="button" data-ai-question="Comment aider ou faire un don ?">Faire un don</button>
+        </div>
+
+        <form id="aiForm" class="ai-input-row">
+          <input id="aiInput" type="text" autocomplete="off"
+                 placeholder="Posez votre question…" aria-label="Votre question">
+          <button class="ai-send" type="submit" aria-label="Envoyer">
+            <i class="fa-solid fa-paper-plane"></i>
+          </button>
+        </form>
+
+        <a class="ai-mail" id="aiMailLink"
+           href="mailto:contact@ongpedroopeka.fr?subject=Question%20%C3%A0%20l%E2%80%99ONG%20PEDRO%20OPEKA">
+          <i class="fa-solid fa-envelope"></i>
+          Une question sans réponse ? Écrire à l’ONG
+        </a>
+        <div class="ai-status">
+          Les questions auxquelles l’assistant ne peut pas répondre sont orientées vers
+          contact@ongpedroopeka.fr.
+        </div>
+      </div>
+    </div>
+    <button id="aiButton" class="float-btn float-ai" type="button"
+            aria-expanded="false" aria-controls="aiPanel">
+      <i class="fa-solid fa-sparkles"></i><span>IA</span>
+    </button>
+  </div>
+
+  <footer id="contact">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h4>ONG PEDRO OPEKA · Akamasoa</h4>
+          <p>
+            Une présentation web consacrée à l’action humanitaire et sociale développée
+            autour d’Akamasoa à Madagascar.
+          </p>
+        </div>
+        <div>
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="#mission">Mission</a></li>
+            <li><a href="#actions">Activités</a></li>
+            <li><a href="#histoire">Histoire</a></li>
+            <li><a href="#galerie">Galerie</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Source principale</h4>
+          <ul>
+            <li><a href="https://www.perepedro-akamasoa.net/" target="_blank" rel="noopener">Akamasoa</a></li>
+            <li><a href="https://www.perepedro-akamasoa.net/rapports/rapport-dactivite-de-lannee-2025/" target="_blank" rel="noopener">Rapport d’activité 2025</a></li>
+            <li><a href="https://www.perepedro-akamasoa.net/galerie-photos/" target="_blank" rel="noopener">Galerie photos</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        © 2026 — Les contenus, noms et photographies restent la propriété de leurs ayants droit.
+        <div class="disclaimer">Les images distantes peuvent dépendre de la disponibilité de leurs serveurs d’origine.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function(){
+      const CONTACT_EMAIL = 'contact@ongpedroopeka.fr';
+
+      // ---------- Formulaire de don : ouverture du logiciel de messagerie ----------
+      const form = document.getElementById('contactForm');
+      const currencyTrigger = document.getElementById('currencyTrigger');
+      const currencyModal = document.getElementById('currencyModal');
+      const currencyModalClose = document.getElementById('currencyModalClose');
+      const currencyOptions = document.querySelectorAll('[data-currency-option]');
+      const currencyLabel = document.getElementById('currencyLabel');
+      const currencyCode = document.getElementById('currencyCode');
+      const currencyTriggerLabel = document.getElementById('currencyTriggerLabel');
+      let selectedCurrency = 'EUR';
+
+      function openCurrencyModal(){
+        if(!currencyModal) return;
+        currencyModal.classList.add('open');
+        currencyModal.setAttribute('aria-hidden','false');
+        currencyTrigger.setAttribute('aria-expanded','true');
+        document.body.style.overflow='hidden';
+      }
+
+      function closeCurrencyModal(){
+        if(!currencyModal) return;
+        currencyModal.classList.remove('open');
+        currencyModal.setAttribute('aria-hidden','true');
+        currencyTrigger.setAttribute('aria-expanded','false');
+        document.body.style.overflow='';
+      }
+
+      if(currencyTrigger) currencyTrigger.addEventListener('click', openCurrencyModal);
+      if(currencyModalClose) currencyModalClose.addEventListener('click', closeCurrencyModal);
+      document.querySelectorAll('[data-close-currency]').forEach(function(el){
+        el.addEventListener('click', closeCurrencyModal);
+      });
+
+      currencyOptions.forEach(function(option){
+        option.addEventListener('click', function(){
+          selectedCurrency = option.dataset.currencyOption;
+          currencyOptions.forEach(function(btn){ btn.classList.remove('active'); });
+          option.classList.add('active');
+
+          if(selectedCurrency === 'USD'){
+            currencyLabel.textContent = 'en dollars ($)';
+            currencyCode.textContent = 'USD';
+            currencyTriggerLabel.textContent = '$ USD';
+          }else{
+            currencyLabel.textContent = 'en euros (€)';
+            currencyCode.textContent = 'EUR';
+            currencyTriggerLabel.textContent = '€ EUR';
+          }
+          closeCurrencyModal();
+        });
+      });
+
+      document.addEventListener('keydown', function(e){
+        if(e.key === 'Escape') closeCurrencyModal();
+      });
+
+      if(form){
+        form.addEventListener('submit', function(e){
+          e.preventDefault();
+
+          const fullName = document.getElementById('fullName').value.trim();
+          const email = document.getElementById('email').value.trim();
+          const type = document.getElementById('type').value;
+          const amount = document.getElementById('amount').value.trim();
+          const message = document.getElementById('message').value.trim();
+
+          if(!fullName || !email){
+            alert('Veuillez remplir votre nom et votre e-mail.');
+            return;
+          }
+
+          const subject = 'Demande de soutien — ONG PEDRO OPEKA';
+          const body =
+            'Bonjour ONG PEDRO OPEKA,%0D%0A%0D%0A' +
+            'Je souhaite vous contacter au sujet d’un soutien.%0D%0A%0D%0A' +
+            'Nom complet : ' + fullName + '%0D%0A' +
+            'E-mail : ' + email + '%0D%0A' +
+            'Type de soutien : ' + type + '%0D%0A' +
+            'Montant : ' + (amount ? amount + ' ' + selectedCurrency : 'Non précisé') + '%0D%0A' +
+            'Message : ' + (message || 'Aucun message supplémentaire.') + '%0D%0A%0D%0A' +
+            'Envoyé depuis le site ONG PEDRO OPEKA.';
+
+          window.location.href =
+            'mailto:' + CONTACT_EMAIL +
+            '?subject=' + encodeURIComponent(subject) +
+            '&body=' + body;
+        });
+      }
+
+      // ---------- Formulaire de demande d'aide : ouverture du logiciel de messagerie ----------
+      const receiveForm = document.getElementById('receiveDonationForm');
+
+      if(receiveForm){
+        receiveForm.addEventListener('submit', function(e){
+          e.preventDefault();
+
+          const name = document.getElementById('receiveFullName').value.trim();
+          const email = document.getElementById('receiveEmail').value.trim();
+          const country = document.getElementById('receiveCountry').value.trim();
+          const need = document.getElementById('receiveNeed').value;
+          const currency = document.getElementById('receiveCurrency').value;
+          const amount = document.getElementById('receiveAmount').value.trim();
+          const message = document.getElementById('receiveMessage').value.trim();
+
+          if(!name || !email || !country || !need || !message){
+            alert('Veuillez remplir les champs obligatoires de votre demande.');
+            return;
+          }
+
+          const needLabel = document.querySelector('#receiveNeed option:checked').textContent;
+          const subject = 'Demande d’aide — ONG PEDRO OPEKA';
+          const body =
+            'Bonjour ONG PEDRO OPEKA,%0D%0A%0D%0A' +
+            'Je souhaite soumettre une demande d’aide.%0D%0A%0D%0A' +
+            'Nom complet : ' + name + '%0D%0A' +
+            'E-mail : ' + email + '%0D%0A' +
+            'Pays : ' + country + '%0D%0A' +
+            'Nature de la demande : ' + needLabel + '%0D%0A' +
+            'Montant / valeur estimée : ' + (amount ? amount + ' ' + currency : 'Non précisé') + '%0D%0A' +
+            'Message : ' + message + '%0D%0A%0D%0A' +
+            'Envoyé depuis le site ONG PEDRO OPEKA.';
+
+          window.location.href =
+            'mailto:' + CONTACT_EMAIL +
+            '?subject=' + encodeURIComponent(subject) +
+            '&body=' + body;
+        });
+      }
+
+      // ---------- Menu flottant ----------
+      const aiButton = document.getElementById('aiButton');
+      const sectionButton = document.getElementById('sectionButton');
+      const aiPanel = document.getElementById('aiPanel');
+      const sectionPanel = document.getElementById('sectionPanel');
+
+      function togglePanel(panel, button){
+        const willOpen = !panel.classList.contains('open');
+        aiPanel.classList.remove('open');
+        sectionPanel.classList.remove('open');
+        aiButton.setAttribute('aria-expanded', 'false');
+        sectionButton.setAttribute('aria-expanded', 'false');
+
+        if(willOpen){
+          panel.classList.add('open');
+          button.setAttribute('aria-expanded', 'true');
+          panel.setAttribute('aria-hidden', 'false');
+        }else{
+          panel.setAttribute('aria-hidden', 'true');
+        }
+      }
+
+      if(aiButton){
+        aiButton.addEventListener('click', function(){
+          togglePanel(aiPanel, aiButton);
+        });
+      }
+
+      if(sectionButton){
+        sectionButton.addEventListener('click', function(){
+          togglePanel(sectionPanel, sectionButton);
+        });
+      }
+
+      document.querySelectorAll('[data-close]').forEach(function(button){
+        button.addEventListener('click', function(){
+          const panel = document.getElementById(button.dataset.close);
+          panel.classList.remove('open');
+          panel.setAttribute('aria-hidden', 'true');
+          if(panel === aiPanel) aiButton.setAttribute('aria-expanded', 'false');
+          if(panel === sectionPanel) sectionButton.setAttribute('aria-expanded', 'false');
+        });
+      });
+
+      // ---------- Assistant ONG : base de réponses + renvoi e-mail ----------
+      const aiForm = document.getElementById('aiForm');
+      const aiInput = document.getElementById('aiInput');
+      const aiChatLog = document.getElementById('aiChatLog');
+      const aiMailLink = document.getElementById('aiMailLink');
+
+      const AI_KNOWLEDGE = [
+        {
+          keys:['action','actions','oeuvre','œuvre','fait','activité','activités','mission'],
+          answer:"L’action d’Akamasoa associe accueil, logement, éducation, santé, emploi, formation et vie communautaire. L’objectif est d’aider les familles à reconstruire leur avenir et leur autonomie."
+        },
+        {
+          keys:['akamasoa','association'],
+          answer:"Akamasoa est une démarche sociale développée à Madagascar autour de l’accueil des familles, du logement, de l’éducation et du travail, avec des villages, écoles, centres de santé et activités communautaires."
+        },
+        {
+          keys:['logement','maison','maisons','habitat'],
+          answer:"Akamasoa construit des maisons durables et des infrastructures afin de permettre aux familles de vivre dans un environnement digne."
+        },
+        {
+          keys:['éducation','education','école','ecole','écoles','ecoles','scolarité','scolarite'],
+          answer:"L’action éducative comprend des crèches, maternelles, écoles, collèges, lycées, enseignement supérieur et formation professionnelle."
+        },
+        {
+          keys:['santé','sante','soin','soins','médecin','medecin','dispensaire','maternité','maternite'],
+          answer:"Dans le domaine de la santé, l’action comprend des dispensaires et structures de soins, une maternité, de la petite hospitalisation, de la prévention, de la dentisterie et un accompagnement médical."
+        },
+        {
+          keys:['travail','emploi','emplois','insertion','métier','metier'],
+          answer:"Le travail et l’insertion comprennent notamment la carrière, la construction, la maçonnerie, la menuiserie, la soudure, l’électricité, l’artisanat et l’entretien."
+        },
+        {
+          keys:['formation','professionnelle','apprentissage','atelier','ateliers'],
+          answer:"Les ateliers de menuiserie, mécanique, maçonnerie et autres métiers permettent aux jeunes d’acquérir des compétences pratiques et de se préparer à l’autonomie."
+        },
+        {
+          keys:['urgence','accueil','aide alimentaire','repas','vêtement','vêtements','couverture','hébergement'],
+          answer:"Le Centre d’Accueil peut notamment apporter des repas, vêtements, couvertures, savon, soins et un hébergement temporaire selon les situations."
+        },
+        {
+          keys:['environnement','reboisement','pépinière','pépinières','jardin','jardins','agriculture','spiruline'],
+          answer:"Les actions environnementales comprennent le reboisement, les pépinières, les jardins, l’agriculture et des projets comme la spiruline, qui participent à la viabilité des communautés."
+        },
+        {
+          keys:['histoire','historique','1989','décharge','andralanitra'],
+          answer:"Le Père Pedro Opeka arrive à Madagascar en 1970. En 1989, à Antananarivo, il découvre les familles vivant dans des conditions très difficiles autour de la décharge d’Andralanitra. En 1989–1990, des familles quittent la décharge pour créer Antolojanahary et l’Association Humanitaire Akamasoa est ensuite officialisée."
+        },
+        {
+          keys:['père pedro','père pedro opeka','pere pedro','pedro opeka'],
+          answer:"Le Père Pedro Opeka est un prêtre lazariste qui a consacré une grande partie de sa vie au service des populations pauvres de Madagascar. Son approche met notamment l’accent sur le logement, l’école et le travail."
+        },
+        {
+          keys:['don','donner','donation','soutenir','aider financièrement','aide financière'],
+          answer:"Pour proposer un soutien financier ou matériel, utilisez le formulaire « Faire un don ». Il permet d’indiquer un montant en euros (€) ou en dollars ($) et ouvre ensuite votre logiciel de messagerie vers contact@ongpedroopeka.fr."
+        },
+        {
+          keys:['contact','email','e-mail','mail','joindre'],
+          answer:"Vous pouvez contacter directement l’ONG à l’adresse contact@ongpedroopeka.fr. Je peux également préparer votre question dans un e-mail."
+        },
+        {
+          keys:['pays','madagascar','où','ou','lieu'],
+          answer:"Les œuvres présentées sur ce site concernent principalement l’action d’Akamasoa à Madagascar."
+        }
+      ];
+
+      function normalizeText(text){
+        return text.toLowerCase()
+          .normalize('NFD')
+          .replace(/[\u0300-\u036f]/g,'')
+          .replace(/[’']/g," ")
+          .replace(/[^a-z0-9\s-]/g,' ')
+          .replace(/\s+/g,' ')
+          .trim();
+      }
+
+      function findAIAnswer(question){
+        const q = normalizeText(question);
+        if(!q) return null;
+
+        let best = null;
+        let bestScore = 0;
+
+        AI_KNOWLEDGE.forEach(function(item){
+          let score = 0;
+          item.keys.forEach(function(key){
+            const k = normalizeText(key);
+            if(q.includes(k)) score += k.length > 5 ? 3 : 2;
+          });
+          if(score > bestScore){
+            bestScore = score;
+            best = item.answer;
+          }
+        });
+
+        return bestScore >= 2 ? best : null;
+      }
+
+      function addAIBubble(text, who){
+        const bubble = document.createElement('div');
+        bubble.className = 'ai-bubble ' + who;
+        bubble.textContent = text;
+        aiChatLog.appendChild(bubble);
+        document.getElementById('aiMessage').scrollTop =
+          document.getElementById('aiMessage').scrollHeight;
+      }
+
+      function askAI(question){
+        question = (question || '').trim();
+        if(!question) return;
+
+        addAIBubble(question, 'user');
+        const answer = findAIAnswer(question);
+
+        if(answer){
+          addAIBubble(answer, 'bot');
+          aiMailLink.style.display = 'none';
+        }else{
+          addAIBubble(
+            "Je ne dispose pas d’une réponse fiable à cette question dans les informations de l’ONG disponibles sur cette page. Pour obtenir une réponse précise, je vous recommande d’écrire directement à l’ONG.",
+            'bot'
+          );
+
+          const subject = encodeURIComponent('Question sur les œuvres de l’ONG PEDRO OPEKA');
+          const body = encodeURIComponent(
+            'Bonjour ONG PEDRO OPEKA,\n\n' +
+            'Ma question est :\n' + question + '\n\n' +
+            'Merci pour votre réponse.\n\n' +
+            'Envoyé depuis le site ONG PEDRO OPEKA.'
+          );
+          aiMailLink.href = 'mailto:' + CONTACT_EMAIL + '?subject=' + subject + '&body=' + body;
+          aiMailLink.style.display = 'flex';
+        }
+      }
+
+      if(aiForm){
+        aiForm.addEventListener('submit', function(e){
+          e.preventDefault();
+          askAI(aiInput.value);
+          aiInput.value = '';
+          aiInput.focus();
+        });
+      }
+
+      document.querySelectorAll('[data-ai-question]').forEach(function(button){
+        button.addEventListener('click', function(){
+          askAI(button.dataset.aiQuestion);
+        });
+      });
+
+      // Fermer les panneaux après un clic sur une section.
+      document.querySelectorAll('#sectionPanel a').forEach(function(link){
+        link.addEventListener('click', function(){
+          sectionPanel.classList.remove('open');
+          sectionPanel.setAttribute('aria-hidden','true');
+          sectionButton.setAttribute('aria-expanded','false');
+        });
+      });
+
+      document.querySelectorAll('.section-menu-list a').forEach(function(link){
+        link.addEventListener('click', function(){
+          aiPanel.classList.remove('open');
+          sectionPanel.classList.remove('open');
+          aiButton.setAttribute('aria-expanded', 'false');
+          sectionButton.setAttribute('aria-expanded', 'false');
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
